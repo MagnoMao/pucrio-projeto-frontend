@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Biblioteca MPV</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h1>Biblioteca</h1>
+        </div>
+    </header>
+
+
+    <section class="usuariosOuLivros">
+        <button onclick="renderUsuarios()" class="addBtn">Usuários</button>
+        <button onclick="renderLivros()" class="addBtn">Livros</button>
+    </section>
+
+    <!--================ SEÇÃO USUARIOS ================-->
+
+      <div id="paginacaoUsuarios">
+        <!-- Opções para adicionar um novo item -->
+        <section class="newItem">
+            <input type="text" id="nomeUsuarioNovo" placeholder="Nome do novo usuário:">
+            <input type="text" id="idadeUsuarioNovo" placeholder="Idade:">
+            <button onclick="novoUsuario()" class="addBtn">Adicionar</button>
+        </section>
+
+        <!-- Tabela com items existentes -->        
+        <section class="items">
+            <table id="usuariosTable">
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+
+    <!--================ SEÇÃO LIVROS ================-->
+    <div id="paginacaoLivros">
+        <!-- Opções para adicionar um novo livro -->
+        <section class="newItem">
+            <input type="text" id="nomeLivroNovo" placeholder="Nome do novo livro:">
+            <input type="text" id="idadeLivroNovo" placeholder="Autor:">
+            <input type="text" id="editoraLivroNovo" placeholder="Editora:">
+            <button onclick="novoLivro()" class="addBtn">Adicionar</button>
+        </section>
+
+        <!-- Tabela com items existentes -->
+        <section class="items">
+            <table id="livrosTable">
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Autor</th>
+                    <th>Editora</th>
+                    <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+

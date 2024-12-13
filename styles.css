@@ -1,0 +1,140 @@
+body{
+    background-image: url('https://steamuserimages-a.akamaihd.net/ugc/1674743029859866757/93596D3CADBEF60D47C41A1DE5EA3ADDA17970AD/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false');
+    padding: 0;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+header {
+    margin: 0;
+    top: 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.title {
+    color: black;
+    font-size: 2em;
+    text-shadow: 3px 3px gray;
+    width: 100%;
+    display: inline-block;
+    padding: 2px 0px;
+    position: sticky;
+    top: 0px;
+}
+
+.newItem, .usuariosOuLivros{
+    padding: 30px 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    min-width: 50%;
+}
+
+.newItem> input{
+    min-width: 20%;
+    margin: 0 2px;
+    border: 1px solid rgb(35, 32, 24);
+    width: 20%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.newItem> input{
+    border-radius: 5px;
+}
+
+#idadeUsuarioNovo{
+    min-width:0
+}
+
+.usuariosOuLivros button{
+    min-width: 100px;
+}
+#paginacaoUsuarios, #paginacaoLivros{
+    display:none 
+}
+.newItem:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#idadeUsuarioNovo {
+    width: 8%;
+}
+
+#newPrice {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 5%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+.addBtn {
+    padding: 9px 10px;
+    background-color: rgb(35, 32, 24);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.addBtn:hover {
+    background-color: #2ab53a;
+    color: white;
+}
+
+.items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.close:hover {
+    color: #f44336;
+    font-weight: bolder;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 10px;
+    font-size: 18px;
+    transition: 0.2s;
+    text-align: start;
+}
+
+table{
+    background-color: rgb(255,255,255,.6);
+    width: 50%;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(100,100,100,.6);
+}
+
+th:last-child(){
+    width:10%
+}
+
+#usuariosTable th:nth-child(1){
+    min-width: 80%;
+}
+#livrosTable th:nth-child(1){
+    width: 10%;
+}
+
+tr:hover {
+    background: rgb(200, 199, 199);
+}
